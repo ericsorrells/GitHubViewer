@@ -1,13 +1,15 @@
-<!-- HEADER PARTIAL -->
-<ul class="menu">
-  <li ng-include="/app/partials/header.html"></li>
-</ul>
+<div class="container">
+  <!-- HEADER PARTIAL -->
+  <ul class="menu">
+    <li ng-include="'/partials/header.html'"></li>
+  </ul>
 
-<!-- FOLLOWING INFO -->
-<div class="center-body">
-  <h3>{{user_name}} Is Following:</h3>
-  <div ng-repeat="follow in following">
-    <img src="{{follow.avatar_url}}" class="following-avatar"> 
-  <a href="https://github.com/{{follow.login}}">{{follow.login}}</a>
+  <!-- FOLLOWING INFO -->
+  <div class="center-body">
+    <h3>{{user_name}} Is Following:</h3>
+    <div ng-repeat="follow in following">
+      <img src="{{follow.avatar_url}}" class="following-avatar"> 
+    <a href="https://github.com/{{follow.login}}">{{follow.login}}</a>
+    </div>
   </div>
 </div>
