@@ -1,9 +1,11 @@
+<!-- HEADER PARTIAL -->
 <ul class="menu">
   <li ng-include="'/app/partials/header.html'"></li>
 </ul>
 
+<!-- REPO INFORMATION -->
 <div class="container row">
   <div ng-repeat="repo in repos">
-    {{repo.name}} <br>
+    <a href="https://github.com/{{repo.full_name}}">{{repo.name}}</a>
   </div>
 </div>
