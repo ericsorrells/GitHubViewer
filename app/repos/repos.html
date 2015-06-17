@@ -1,0 +1,9 @@
+<ul class="menu">
+  <li ng-include="'/app/partials/header.html'"></li>
+</ul>
+
+<div class="container row">
+  <div ng-repeat="repo in repos">
+    {{repo.name}} <br>
+  </div>
+</div>
