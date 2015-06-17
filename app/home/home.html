@@ -1,0 +1,45 @@
+<div>
+  
+  <div class="image" ng-show="!user">
+    <img src="images/github-white.png" id="homepg-image">
+  </div>
+
+  <!-- SEARCH FORM -->
+  <form ng-submit="getUserInfo(user_name)"  ng-show="!user" class="image">
+    <h1>GitHub Viewer</h1>
+    <h4>Search for a User's Github Info!</h4>
+    <input type="text" ng-model="user_name" class="hm-search-box" placeholder="Enter User Name"><br>
+    <input type="submit" value="Submit" class="hm-submit-btn">
+  </form>
+
+  <!-- USER DATA -->
+  <div ng-show="user" id="user-info-container">
+  <div ng-include="'/app/partials/header.html'"></div>
+    <div id="user-info-row">
+      <img src="{{user.avatar_url}}" class="avatar">
+      <div id="user-info-col">
+        <ul id="user-info-list">
+          <li>
+            <h1 class="login">{{user.login}}</h1>
+          </li>
+            <hr>
+          <li>
+            <h3 class="name">{{user.name}}</h3>
+          </li>
+          <li>
+            User Repos: 
+            <a href="#/repos">{{user.public_repos}} User Repos</a>
+          </li>
+          <li class="user-info">
+            Followers: 
+            <a href="#/followers">{{user.followers}} Followers</a>
+          </li>
+          <li class="user-info">
+            Following: 
+            <a href="#/following">Following {{user.following}}</a>
+          </li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+</div>

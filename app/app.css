@@ -1,5 +1,139 @@
-/* app css stylesheet */
+/* GENERAL STYLES
+========================================*/
 
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* NAV-BAR
+========================================*/
+.nav-bar {
+  background-color: black;
+}
+
+.nav-logo {
+  width: 100px;
+  height: auto;
+  vertical-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0px;
+  top: 0px;
+}
+
+.nav-bar :link {
+  color: white;
+  text-decoration: none;
+}
+
+li .menu {
+  display: inline-block;
+}
+
+/* HOME PAGE
+========================================*/
+.image {
+  width: 100%;
+  text-align: center;
+}
+
+#homepg-image {
+  width: 650px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#homepg-image-small {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.hm-search-box,
+.hm-submit-btn {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.hm-search-box {
+  margin-bottom: 20px;
+}
+
+.hm-submit-btn {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+#user-info-container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#user-info-row {
+  margin-top: 50px;
+  display: inline-block;
+}
+
+#user-info-col {
+  float: right;
+  margin-left: 20px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+hr {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.avatar {
+  width: 250px;
+  height: auto;
+  float: left;
+  margin-bottom: 200px;
+}
+
+.login,
+.name {
+  margin-top: 0px;
+  margin: 0px;
+}
+
+.user-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* 
+========================================*/
+
+
+/* app css stylesheet */
+/*
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -28,3 +162,4 @@
   content: "";
   padding: 0;
 }
+*/
