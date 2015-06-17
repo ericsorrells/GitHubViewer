@@ -128,8 +128,24 @@ hr {
   margin-bottom: 10px;
 }
 
-/* 
+/* FOLLOWERS & FOLLOWING
 ========================================*/
+
+.followers-avatar,
+.following-avatar {
+  height: 75px;
+  width: auto;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+.center-body {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
 
 
 /* app css stylesheet */
